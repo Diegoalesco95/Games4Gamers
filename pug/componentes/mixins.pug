@@ -14,7 +14,14 @@ mixin caja(imagen, categoria, titulo, contenido)
 			span.caja__categoria=categoria
 			h3=titulo
 			p=contenido
-			a Leer Mas		
+			a Leer Mas
+mixin caja-noticias(category, title, summary)
+	.caja-noticias
+		.caja__contenido
+			span.caja__categoria=category
+			h3=title
+			p=summary
+		+estadistica
 mixin caja--estadistica(imagen, category, title, summary)
 	.caja
 		.caja__imagen: img(src="../images/"+imagen)
@@ -23,7 +30,6 @@ mixin caja--estadistica(imagen, category, title, summary)
 			h3=title
 			p=summary
 		+estadistica
-
 mixin estadistica
 	.estadistica--articulos: ul
 		li
@@ -35,7 +41,6 @@ mixin estadistica
 		li
 			i.fas.fa-comment-alt
 			span 12
-
 mixin estadistica--caja-con-fondo
 	.caja--con-fondo__stats: ul
 		li
@@ -47,7 +52,6 @@ mixin estadistica--caja-con-fondo
 		li
 			i.fas.fa-comment-alt
 			span 12
-
 mixin caja--con-fondo-grande (imagen, categoria, titulo, contenido)
 	a(class="caja--con-fondo caja--grande")
 		.caja__imagen: img(src="../images/"+imagen)
@@ -56,7 +60,6 @@ mixin caja--con-fondo-grande (imagen, categoria, titulo, contenido)
 			h2=titulo
 			p=contenido
 		+estadistica--caja-con-fondo
-
 mixin caja--con-fondo-mediana (clase, imagen, categoria, titulo, contenido)
 	a(class="caja--con-fondo caja--mediana " + clase)
 		.caja__imagen: img(src="../images/"+imagen)
@@ -64,7 +67,6 @@ mixin caja--con-fondo-mediana (clase, imagen, categoria, titulo, contenido)
 			span.caja--con-fondo__categoria=categoria
 			h2=titulo
 		+estadistica--caja-con-fondo
-
 mixin caja--con-fondo-pequena (clase, imagen, categoria, titulo, contenido)
 	a(class="caja--con-fondo caja--pequena " + clase)
 		.caja__imagen: img(src="../images/"+imagen)
@@ -72,9 +74,7 @@ mixin caja--con-fondo-pequena (clase, imagen, categoria, titulo, contenido)
 			span.caja--con-fondo__categoria=categoria
 			h2=titulo
 		+estadistica--caja-con-fondo
-
 mixin listado-categoria(numero,titulo)
 	li: a(href="#")
 		span.sidebar--listado__numero=numero
 		span.sidebar--listado__titulo=titulo
-		

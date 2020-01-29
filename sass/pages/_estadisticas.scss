@@ -1,7 +1,7 @@
 .estadistica--perfil {
 	display: flex;
 	width: 50%;
-	height: 80px;
+	height: 90px;
 	padding-top: 15px;
 	margin: 0 auto;
 	justify-content: space-around;
@@ -25,8 +25,7 @@
 .estadistica--articulos {
 	height: 70px;
 	padding: 20px;
-	border-top: 1px solid #E9E9E9;
-	
+	border-top: 1px solid rgba($color-claro, 0.30);
 	ul {
 		display: flex;
 		margin: 0;
@@ -35,9 +34,9 @@
 	}
 		li {
 			list-style: none;
-			color: get-opacity($color-primario, .20);
+			color: get-opacity($color-claro, .30);
 		}
-			span  {
+		span  {
 			margin-left: 10px;
 		}
 	}

@@ -1,26 +1,23 @@
 .encabezado--con-filtros {
-	display: flex;
-	width: 90%;
-	margin: 0 auto;
-	padding: 30px 0;
+	@include contenedor;
 	h2 {
 		margin-top: 10px;
 		font-size: 30px;
 		@include titulos($Fuente2);
 	}
 	.filtros {
-		width: 250px;
-		height: 60px;
+		width: 240px;
+		height: 75px;
 		padding: 20px;
 		margin-left: auto;
-		@include caja;
+		@include caja-sombra;
 	}
 		span {
 			@include titulos($Fuente2);
 		}
 		a {
 			margin-left: 20px;
-			color: #ccc;
-			font-size: 20px;
+			font-size: 25px;
+			color: $color-claro;
 		}
 }

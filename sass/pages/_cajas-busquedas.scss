@@ -1,0 +1,29 @@
+.contenido {
+	margin-bottom: 40px;
+	justify-content: space-evenly;
+	@include contenedor;
+}
+.caja {
+  max-width: 430px;
+  @include caja-sombra;
+  &__imagen img {
+    width: 430px;
+    object-fit: cover;
+  }
+  &__contenido {
+    height: 212px;
+    padding: 20px;
+    background-color: $color-secundario;
+    p {
+      font-size: 16px;
+    }
+    span {
+      color: $color-primario;
+      @include titulos($Fuente2);
+    }
+    h3 {
+      @include titulos($Fuente2);
+      font-weight: normal;
+    }
+  }
+}

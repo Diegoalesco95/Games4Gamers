@@ -1,0 +1,41 @@
+// MIXINS
+@mixin caja {
+	color: $color-primario;
+	box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.20);
+}
+@mixin caja-perfil{
+	border-radius: 20px;
+	background-color: $color-secundario;
+	@include caja;
+}
+@mixin titulos($fuente) {
+	@if $fuente == $Fuente1 {
+		font-family: $Fuente1;
+	} @else {
+		font-family: $Fuente2;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}
+@mixin sombra-caja {
+	box-shadow: 0px 5px 15px 0px rgba($color-secundario, 0.50);
+}
+@mixin caja-sombra {
+	background-color: $color-secundario;
+	box-shadow: 0px 5px 15px 0px rgba($color-secundario, 0.50);
+}
+@mixin Oswald {
+	font-family: $Fuente2;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+@mixin fuente($font-size){
+	font-size: $font-size;
+	line-height: $font-size + 10px;
+}
+@mixin contenedor {
+	display: flex;
+	width: 96%;
+	margin: 0 auto;
+	padding: 30px 0;
+}

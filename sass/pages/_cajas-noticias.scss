@@ -1,0 +1,12 @@
+.noticias {
+  margin-bottom: 40px;
+  justify-content: space-evenly;
+  @include contenedor;
+}
+.caja-noticias {
+  max-width: 430px;
+  @include caja-sombra;
+  &__contenido {
+    @extend .caja__contenido;
+  }
+}

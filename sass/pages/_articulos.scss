@@ -1,0 +1,43 @@
+.articulo--principal {
+	max-width: 660px;
+	margin: 20px auto;
+	&__intro {
+		@include fuente(25px);
+	}
+	p {
+		margin: 18px auto;
+	}	
+	h2 {
+		margin: 40px 0 40px 0;
+		text-align: center;
+		color: $color-secundario;
+		@include fuente(50px);
+	}	
+	h3 {
+		color: $color-secundario;
+	}
+}
+.articulos {
+  width: 45%;
+  padding: 50px 0 0 100px;
+}
+.articulo {
+  margin-bottom: 75px;
+  border-bottom: 3px solid $color-secundario;
+  &__categoria {
+    font-weight: 500;
+    font-size: 16px;
+    color: $color-secundario;
+    @include titulos($Fuente2);
+  }
+  &__titulo {
+    font-size: 20px;
+    color: $color-claro;
+    @include titulos($Fuente2);
+  }
+  &__descripcion {
+    color: $color-claro;
+    margin-bottom: 30px;
+    padding-right: 50px;
+  }
+}
