@@ -1,10 +1,14 @@
 @import "base/bootstrap_reboot";
+@import "components/breakpoints";
+@import "components/grids";
 @import "utils/variables";
 @import "utils/mixins";
 @import "utils/funciones";
 @import "base/globales";
-@import "components/grids";
 @import "pages/homepage";
 @import "pages/cajas-principal";
+@import "pages/estadisticas";
+@import "pages/sidebars";
+@import "pages/banners";
 @import "layout/headers";
 @import "layout/footers";

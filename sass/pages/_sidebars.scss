@@ -1,0 +1,38 @@
+.sidebar--listado {
+  height: 580px;
+  max-width: auto;
+  padding: 40px;
+  h3 {
+    color: $color-secundario;
+    @include font-size(20px);
+    @include titulos($Fuente2);
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 10px 0;
+    margin: 10px 0;
+    border-top: 1px solid get-opacity($color-claro, 0.5);
+    list-style: none;
+  }
+  a {
+    display: flex;
+    padding: 10px 20px;
+    color: $color-claro;
+  }
+  &__numero {
+    margin-right: 20px;
+    color: get-opacity($color-claro, 0.5);
+  }
+  @include media(tablet) { 
+    max-width: 416px;
+    margin: 0;
+	}
+  @include media(desktop-s) {
+    max-width: 320px;
+    height: 590px;
+    @include caja();
+  }
+}

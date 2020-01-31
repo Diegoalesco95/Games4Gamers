@@ -1,26 +1,70 @@
 .header--principal {
   display: flex;
-  padding: 0 20px 20x 20px;
+  padding: 0 20px 20px 20px;
   margin-bottom: 20px;
   width: 100%;
   height: 90px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
   background-color: $color-primario;
   border-bottom: 1px solid $color-claro;
+  img {
+    width: 100%;
+    min-width: 264px;
+  }
 }
 .nav--header ul {
-  display: flex;
-  padding-top: 35px;
+  display: none;
+  align-items: left;
+  flex-direction: column;
+  width: 80%;
+  height: 100vh;
+  border-left: 1px solid $color-claro;
+  position: fixed;
+  top: 90px;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  list-style: none;
+  background-color: $color-primario;
   li {
-    list-style: none;
-    margin-right: 50px;
+    width: 80%;
+    margin: 70px 20px 0 0;
+    border-bottom: 1px solid get-opacity($color-claro, 0.5);
+    a {
+      color: $color-claro;
+      @include titulos($Fuente2)
+    }
   }
-  a {
-    color: $color-claro;
-    @include titulos($Fuente2);
+  @include media(desktop-s) {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    position: initial;
+    z-index: initial;
+    background-color: initial;
+    li {
+      list-style: none;
+      margin: 40px 50px 0 0;
+      border-bottom: none;
+      a {
+        color: $color-claro;
+        @include titulos($Fuente2);
+      }
+    }
   }
 }
+.nav--header.is-active ul {
+  display: flex
+}
 .header__busqueda {
-  display: flex;
+  display: none;
   margin-left: auto;
   padding-top: 35px;
   &:hover {
@@ -34,5 +78,72 @@
   span {
     color: $color-claro;
     @include titulos($Fuente2);
+  }
+  @include media(desktop-s) {
+    display: flex;
+  }
+}
+.header__menu {
+  display: none;
+  margin-left: auto;
+  padding-top: 35px;
+  &:hover {
+    text-decoration: none;
+    color: $color-secundario;
+  }
+  i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: $color-claro;
+  }
+  @include media(desktop-s) {
+    display: none !important; 
+  }
+}
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 1.5s ease-in;
+  opacity: 1;
+  visibility: visible;
+  background: rgba($color-secundario, .3);
+}
+.overlay-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes menuIn {
+  0% {
+    transform: translateY(-3000px);
+  }
+  60% {
+    transform: translateY(25px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  90% {
+    transform: translateY(5px);
+  }
+}
+@keyframes menuOut {
+  0% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(-3000px);
   }
 }
