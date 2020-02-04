@@ -1,6 +1,6 @@
 .estadistica--perfil {
 	display: flex;
-	width: 50%;
+	width: 80%;
 	height: 90px;
 	padding-top: 15px;
 	margin: 0 auto;
@@ -19,6 +19,9 @@
 		text-align: center;
 		color: get-opacity($color-primario, .5);
 		@include titulos($Fuente2);
+	}
+	@include media(tablet) {
+		width: 50%;
 	}
 }
 

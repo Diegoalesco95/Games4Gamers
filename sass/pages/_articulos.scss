@@ -18,11 +18,14 @@
 	}
 }
 .articulos {
-  width: 45%;
-  padding: 50px 0 0 100px;
+  width: 100%;
+  padding: 50px 20px;
+  @include media(tablet) {
+    width: 45%;
+    padding: 50px 0 0 100px;
+	}
 }
 .articulo {
-  margin-bottom: 75px;
   border-bottom: 3px solid $color-secundario;
   &__categoria {
     font-weight: 500;
@@ -39,5 +42,8 @@
     color: $color-claro;
     margin-bottom: 30px;
     padding-right: 50px;
+  }
+  @include media(tablet) {
+    margin-bottom: 75px;
   }
 }

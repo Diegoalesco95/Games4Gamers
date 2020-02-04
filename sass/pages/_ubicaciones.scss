@@ -1,5 +1,5 @@
 .ubicacion--perfil {
-	width: 50%;
+	width: 80%;
 	height: 90px;
 	margin: 30px auto 0 auto;
 	padding: 20px 0 0 50px;
@@ -23,5 +23,8 @@
 			//1 agregar aca
 		color: get-opacity($color-primario, .50);
 		@include titulos($Fuente2);
+	}
+	@include media(tablet) {
+		width: 50%;
 	}
 }

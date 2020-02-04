@@ -1,6 +1,16 @@
+.main-perfiles {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	margin-top: 120px;
+	width: 100%;
+	@include media(tablet) {
+		display: flex;
+	}
+}
 .perfil {
-	width: 50%;
-	padding-top: 50px;
+	width: 100%;
+	height: auto;
+	padding: 50px 0;
 	color: $color-claro;
 	background-color: $color-secundario;	
 	&__avatar {
@@ -19,10 +29,8 @@
 		text-align: center;
 		font-weight: 700;
 		font-size: 12px;
-				// incluir aca
 		color: get-opacity($color-claro, .50);
 	}
-	//2 agregar aca
 	&__boton {
 		display: block;
 		width: 100px;
@@ -34,9 +42,11 @@
 		text-align: center;
 		color: $color-claro;
 		@include titulos($Fuente2);
-				// incluir aca
 		border: 2px solid get-opacity($color-claro, .50);
 		background-color: get-opacity($color-primario, .50);
+	}
+	@include media(tablet) {
+		width: 50%;
 	}
 }
 
