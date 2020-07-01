@@ -22,25 +22,25 @@
 
 ![Home Preview](./.readme-static/principal.png)
 
-[Ver la Home](https://diegoalesco95.github.io/Games4Gamers/G4G-principal.html)
+[Ver Home](https://diegoalesco95.github.io/Games4Gamers/G4G-principal.html)
 
 ## Vista del Articulo
 
 ![Articulo Preview](./.readme-static/articulo.png)
 
-[Ver la Articulo](https://diegoalesco95.github.io/Games4Gamers/G4G-articulo.html)
+[Ver Articulo](https://diegoalesco95.github.io/Games4Gamers/G4G-articulo.html)
 
 ## Vista del Perfil
 
 ![Perfil Preview](./.readme-static/perfil.png)
 
-[Ver la Perfil](https://diegoalesco95.github.io/Games4Gamers/G4G-perfil.html)
+[Ver Perfil](https://diegoalesco95.github.io/Games4Gamers/G4G-perfil.html)
 
 ## Vista del Búsqueda
 
 ![Búsqueda Preview](./.readme-static/busqueda.png)
 
-[Ver la Búsqueda](https://diegoalesco95.github.io/Games4Gamers/G4G-busqueda.html)
+[Ver Búsqueda](https://diegoalesco95.github.io/Games4Gamers/G4G-busqueda.html)
 
 ## Licencia
 
