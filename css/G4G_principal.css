@@ -265,7 +265,12 @@ body {
   outline: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -328,7 +333,8 @@ a:not([href]):not([tabindex]) {
   text-decoration: none;
 }
 
-a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
   color: inherit;
   text-decoration: none;
 }
@@ -468,7 +474,7 @@ h3 {
 body {
   margin: 0;
   background-color: #333333;
-  color: #FFF;
+  color: #fff;
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
@@ -482,7 +488,9 @@ main {
   height: 100%;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -761,13 +769,13 @@ h1, h2, h3 {
   padding: 20px;
   position: absolute;
   text-align: center;
-  color: #FFF;
+  color: #fff;
 }
 .caja--con-fondo__contenido p {
-  color: #FFF;
+  color: #fff;
 }
 .caja--con-fondo__contenido h2 {
-  color: #FFF;
+  color: #fff;
 }
 .caja--con-fondo__categoria {
   display: block;
@@ -776,8 +784,8 @@ h1, h2, h3 {
   margin: 10px auto;
   padding: 10px 0;
   text-align: center;
-  background-color: #8841DA;
-  color: #FFF;
+  background-color: #8841da;
+  color: #fff;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -873,7 +881,7 @@ h1, h2, h3 {
   margin: 0 auto;
   justify-content: space-around;
   border-radius: 20px;
-  background-color: #FFF;
+  background-color: #fff;
   color: #333333;
   box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.2);
 }
@@ -941,10 +949,10 @@ h1, h2, h3 {
 .caja--con-fondo__stats ul i {
   font-size: 16px;
   padding: 5px 10px;
-  color: #FFF;
+  color: #fff;
 }
 .caja--con-fondo__stats ul span {
-  color: #FFF;
+  color: #fff;
 }
 .sidebar--listado {
   height: 580px;
@@ -952,7 +960,7 @@ h1, h2, h3 {
   padding: 40px;
 }
 .sidebar--listado h3 {
-  color: #8841DA;
+  color: #8841da;
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -973,7 +981,7 @@ h1, h2, h3 {
 .sidebar--listado a {
   display: flex;
   padding: 10px 20px;
-  color: #FFF;
+  color: #fff;
 }
 .sidebar--listado__numero {
   margin-right: 20px;
@@ -998,8 +1006,8 @@ h1, h2, h3 {
   max-width: auto;
   padding: 50px;
   margin-bottom: 10px;
-  background-color: #8841DA;
-  color: #FFF;
+  background-color: #8841da;
+  color: #fff;
 }
 .banner--homepage h3 {
   padding: 10px 0;
@@ -1023,8 +1031,8 @@ h1, h2, h3 {
   margin: 20px 30%;
   padding: 10px;
   height: 50px;
-  border: 2px solid #FFF;
-  color: #FFF;
+  border: 2px solid #fff;
+  color: #fff;
   background-color: rgba(51, 51, 51, 0.2);
   border-radius: 20px;
   font-size: 16px;
@@ -1057,7 +1065,7 @@ h1, h2, h3 {
   top: 0;
   z-index: 999;
   background-color: #333333;
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #fff;
 }
 .header--principal img {
   width: 100%;
@@ -1070,7 +1078,7 @@ h1, h2, h3 {
   flex-direction: column;
   width: 80%;
   height: 100vh;
-  border-left: 1px solid #FFF;
+  border-left: 1px solid #fff;
   position: fixed;
   top: 90px;
   right: 0;
@@ -1085,7 +1093,7 @@ h1, h2, h3 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .nav--header ul li a {
-  color: #FFF;
+  color: #fff;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -1110,7 +1118,7 @@ h1, h2, h3 {
     border-bottom: none;
   }
   .nav--header ul li a {
-    color: #FFF;
+    color: #fff;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
@@ -1132,10 +1140,10 @@ h1, h2, h3 {
 .header__busqueda i {
   font-size: 20px;
   margin-right: 10px;
-  color: #FFF;
+  color: #fff;
 }
 .header__busqueda span {
-  color: #FFF;
+  color: #fff;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -1153,12 +1161,12 @@ h1, h2, h3 {
 }
 .header__menu:hover {
   text-decoration: none;
-  color: #8841DA;
+  color: #8841da;
 }
 .header__menu i {
   font-size: 20px;
   margin-right: 10px;
-  color: #FFF;
+  color: #fff;
 }
 @media only screen and (min-width: 992px) {
   .header__menu {
@@ -1250,7 +1258,7 @@ h1, h2, h3 {
     margin-right: 50px;
   }
   .nav--footer ul a {
-    color: #FFF;
+    color: #fff;
   }
 }
 
@@ -1279,9 +1287,9 @@ h1, h2, h3 {
   }
   .nav--social li {
     margin-right: 50px;
-    color: #FFF;
+    color: #fff;
   }
   .nav--social a {
-    color: #FFF;
+    color: #fff;
   }
 }

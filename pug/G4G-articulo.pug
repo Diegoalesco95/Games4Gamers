@@ -1,14 +1,14 @@
-extend componentes/plantilla.pug
+extend componentes/_plantilla.pug
 block css
-	link(rel='stylesheet', href='../css/G4G_articulo.css')
+	link(rel='stylesheet', href='./css/G4G_articulo.css')
 block contenidos
 	section.intro
-		.intro__imagen: img(src="../images/intro.jpg")
+		.intro__imagen: img(src="./images/intro.jpg")
 		.intro__contenido
 			span.intro__categoria Noticias
 			h1.intro__titulo Cyberpunk 2077 tiene tres prólogos distintos
 		.intro__autor
-			img(src="../images/avatar.jpg")
+			img(src="./images/avatar.jpg")
 			span.intro__autor-titulo Autor
 			span.intro__autor-nombre John Wick
 	article.articulo--principal

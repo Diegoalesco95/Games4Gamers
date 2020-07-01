@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap">
-    <link rel="stylesheet" href="../css/G4G_articulo.css">
+    <link rel="stylesheet" href="./css/G4G_articulo.css">
     <script src="https://kit.fontawesome.com/552ebddad2.js"></script>
   </head>
   <body>
     <header class="header--principal">
-      <div class="logo logo--header"><img src="../images/logo--header.svg"></div>
+      <div class="logo logo--header"><img src="./images/logo--header.svg"></div>
       <nav class="nav--header">
         <ul>
           <li><a href="#">Playstation</a></li>
@@ -20,14 +20,14 @@
           <li><a href="#">PC</a></li>
           <li><a href="#">Mobile</a></li>
         </ul>
-      </nav><a class="header__busqueda" href="#"><i class="fas fa-search"></i><span>Search</span></a>
+      </nav><a class="header__busqueda" href="#"><i class="fas fa-search"></i><span>Search</span></a><i class="header__menu show-menu fas fa-bars" id="menu"></i>
     </header>
     <section class="intro">
-      <div class="intro__imagen"><img src="../images/intro.jpg"></div>
+      <div class="intro__imagen"><img src="./images/intro.jpg"></div>
       <div class="intro__contenido"><span class="intro__categoria">Noticias</span>
         <h1 class="intro__titulo">Cyberpunk 2077 tiene tres prólogos distintos</h1>
       </div>
-      <div class="intro__autor"><img src="../images/avatar.jpg"><span class="intro__autor-titulo">Autor</span><span class="intro__autor-nombre">John Wick</span></div>
+      <div class="intro__autor"><img src="./images/avatar.jpg"><span class="intro__autor-titulo">Autor</span><span class="intro__autor-nombre">John Wick</span></div>
     </section>
     <article class="articulo--principal">
       <p class="articulo--principal__intro">En Cyberpunk 2077 los jugadores podrán seleccionar entre tres historias de origen diferentes, cada una presentando una ubicación de partida distinta para su personaje.</p>
@@ -39,30 +39,48 @@
       <h2>No te Pierdas...</h2>
     </article>
     <section class="contenedor--cajas">
-      <div class="caja">
-        <div class="caja__imagen"><img src="../images/xbox.jpg"/></div>
+      <div class="caja"><a class="caja__imagen" href="#"><img src="./images/xbox.jpg"/></a>
         <div class="caja__contenido"><span class="caja__categoria">Xbox</span>
           <h3>Conoce las actualizaciones de Game Pass</h3>
-          <p>A una semana terminado el E3, Microsoft anunció la 1era rotación de juegos para Xbox</p><a>Leer Mas	</a>
+          <p>A una semana terminado el E3, Microsoft anunció la 1era rotación de juegos para Xbox</p>
+        </div>
+        <div class="estadistica--articulos">
+          <ul>
+            <li><i class="fas fa-share"></i><span>275</span></li>
+            <li><i class="fas fa-eye"></i><span>275</span></li>
+            <li><i class="fas fa-comment-alt"></i><span>12</span></li>
+          </ul>
         </div>
       </div>
-      <div class="caja">
-        <div class="caja__imagen"><img src="../images/fortnite.jpg"/></div>
+      <div class="caja"><a class="caja__imagen" href="#"><img src="./images/fortnite.jpg"/></a>
         <div class="caja__contenido"><span class="caja__categoria">Fortnite</span>
           <h3>Fortnite une fuerzas con Stranger Things</h3>
-          <p>Portales hacia el Upside Down han aparecido dentro de Fortnite, y aunque no funcionan igual.</p><a>Leer Mas	</a>
+          <p>Portales hacia el Upside Down han aparecido dentro de Fortnite, y aunque no funcionan igual.</p>
+        </div>
+        <div class="estadistica--articulos">
+          <ul>
+            <li><i class="fas fa-share"></i><span>275</span></li>
+            <li><i class="fas fa-eye"></i><span>275</span></li>
+            <li><i class="fas fa-comment-alt"></i><span>12</span></li>
+          </ul>
         </div>
       </div>
-      <div class="caja">
-        <div class="caja__imagen"><img src="../images/cuphead.jpg"/></div>
+      <div class="caja"><a class="caja__imagen" href="#"><img src="./images/cuphead.jpg"/></a>
         <div class="caja__contenido"><span class="caja__categoria">Cuphead</span>
           <h3>Cuphead se atrasa hasta el año 2020</h3>
-          <p>Los miembros de Studio MDHR revelan la razón detrás del atraso de la fecha de lanzamiento.</p><a>Leer Mas	</a>
+          <p>Los miembros de Studio MDHR revelan la razón detrás del atraso de la fecha de lanzamiento.</p>
+        </div>
+        <div class="estadistica--articulos">
+          <ul>
+            <li><i class="fas fa-share"></i><span>275</span></li>
+            <li><i class="fas fa-eye"></i><span>275</span></li>
+            <li><i class="fas fa-comment-alt"></i><span>12</span></li>
+          </ul>
         </div>
       </div>
     </section>
     <footer class="footer--principal">
-      <div class="logo logo--footer"><img src="../images/logo--footer.svg"></div>
+      <div class="logo logo--footer"><img src="./images/logo--footer.svg"></div>
       <nav class="nav--footer">
         <ul>
           <li><a href="#">Playstation</a></li>
@@ -82,5 +100,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/header.js"></script>
   </body>
 </html>

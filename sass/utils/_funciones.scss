@@ -4,15 +4,15 @@
 }
 @each $header, $size in (h1: 30px, h2: 25px, h3: 20px) {
   #{$header} {
-		font-size: $size;
-		// @include titulos($Fuente2);
-		margin: 0;
+    font-size: $size;
+    // @include titulos($Fuente2);
+    margin: 0;
   }
 }
 @function get-opacity($color, $nivel) {
   @return rgba($color, $nivel);
 }
 @function calculateRem($size) {
-	$remSize: $size / 16px;
-	@return $remSize * 1rem;
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
 }
